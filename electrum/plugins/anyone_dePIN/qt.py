@@ -24,11 +24,16 @@ class Plugin(BasePlugin):
         print(self,parent,config)
         print("starting anon client")
         operating_software = str(platform.system())
+        arch = str(platform.machine())
+
         subprocess.run("pwd",cwd="./electrum/plugins/anyone_dePIN")
         if operating_software == "Linux":
             proc = subprocess.Popen("./anon -f anonrc --agree-to-terms",cwd="./electrum/plugins/anyone_dePIN",shell=True)
-        elif operating_software == "Darwin":
+        elif operating_software == "Darwin" and "arm64" not in arch:
             proc = subprocess.Popen("./anon-mac -f anonrc --agree-to-terms",cwd="./electrum/plugins/anyone_dePIN",shell=True, stdin=None, stdout=None, stderr=None,
+    close_fds=True)
+        elif operating_software == "Darwin" and "arm64" in arch:
+            proc = subprocess.Popen("./anon-mac-arm -f anonrc --agree-to-terms",cwd="./electrum/plugins/anyone_dePIN",shell=True, stdin=None, stdout=None, stderr=None,
     close_fds=True)
         elif operating_software == "Windows":
             proc = subprocess.Popen("./anon-win",cwd="./electrum/plugins/anyone_dePIN",shell=True, stdin=None, stdout=None, stderr=None,
