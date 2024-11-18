@@ -12,7 +12,7 @@ Homepage: https://electrum.org/
 [![Help translate Electrum online](https://d322cqt584bo4o.cloudfront.net/electrum/localized.svg)](https://crowdin.com/project/electrum)
 
 ## Main differences
-This is a fork of Electrum with an additinonal plugin added which allows users to privatize their transations using the ANyONe Protocol https://www.anyone.io/
+This is a fork of Electrum with an additinonal plugin added which allows users to privatize their transactions using the ANyONe Protocol https://www.anyone.io/
 
 ## Getting started
 
