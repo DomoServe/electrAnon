@@ -14,6 +14,8 @@ Homepage: https://electrum.org/
 ## Main differences
 This is a fork of Electrum with an additinonal plugin added which allows users to privatize their transactions using the ANyONe Protocol https://www.anyone.io/
 
+![image](https://github.com/user-attachments/assets/9949c2a7-f278-4ab3-97e0-0ef01b523ffe)
+
 ## Getting started
 
 _(If you've come here looking to simply run Electrum,
