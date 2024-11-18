@@ -1,4 +1,4 @@
-# Electrum - Lightweight Bitcoin client
+# Electrum ANON - Lightweight Bitcoin client with ANyONe Protocol enabled 
 
 ```
 Licence: MIT Licence
@@ -11,6 +11,8 @@ Homepage: https://electrum.org/
 [![Test coverage statistics](https://coveralls.io/repos/github/spesmilo/electrum/badge.svg?branch=master)](https://coveralls.io/github/spesmilo/electrum?branch=master)
 [![Help translate Electrum online](https://d322cqt584bo4o.cloudfront.net/electrum/localized.svg)](https://crowdin.com/project/electrum)
 
+## Main differences
+This is a fork of Electrum with an additinonal plugin added which allows users to privatize their transations using the ANyONe Protocol https://www.anyone.io/
 
 ## Getting started
 
